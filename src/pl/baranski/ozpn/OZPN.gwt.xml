@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='ozpn'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+	<inherits name="com.gwtext.GwtExt"/>
+	<inherits name="com.gwtextux.GwtExtUx"/>
+
+ 
+  <entry-point class='pl.baranski.ozpn.client.OZPN'/>
+
+  <source path='client'/>
+  <source path='shared'/>
+  <source path='public'/>
+  
+<stylesheet src="js/ext/resources/css/ext-all.css"/>
+	<script src="js/ext/adapter/ext/ext-base.js"/>
+	<script src="js/ext/ext-all.js"/>
+
+</module>
