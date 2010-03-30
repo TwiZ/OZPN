@@ -1,0 +1,21 @@
+<project name="OZPN" basedir="." default="default">
+ 
+	<target name="default" depends="buildwar,deploy"></target>
+ 
+	<target name="buildwar">
+		<war basedir="war" destfile="ozpn.war" webxml="war/WEB-INF/web.xml">
+			<exclude name="WEB-INF/classes/pl/baranski/ozpn/public/lib/**" />
+			<webinf dir="war/WEB-INF/">
+				<include name="**/*.jar" />
+			</webinf>
+		</war>
+	</target>
+ 
+	<target name="deploy">
+		<copy file="ozpn.war" todir="." />
+	</target>
+ 
+</project>
+
+
+		<!--	<exclude name="ozpn/lib/**" /><exclude name="WEB-INF/lib/**" /> -->
